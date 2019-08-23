@@ -12,6 +12,7 @@ public:
     void charge();
     void changeEngine(ElectricEngine* engine);
 
+private:
     ElectricEngine* engine_;
 };
 

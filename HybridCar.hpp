@@ -13,6 +13,7 @@ public:
     void charge();
     void refuel();
 
+private:
     PetrolEngine* petrolEngine_;
     ElectricEngine* electricEngine_;
 };
