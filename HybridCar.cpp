@@ -8,7 +8,7 @@ HybridCar::HybridCar(PetrolEngine* petrolEng, ElectricEngine* electricEng)
     std::cout << __FUNCTION__ << std::endl;
 }
 
-HybridCar::~HybridCar()       { std::cout << __FUNCTION__ << std::endl; }
+HybridCar::~HybridCar()       { delete petrolEngine_; delete electricEngine_; std::cout << __FUNCTION__ << std::endl; }
 void HybridCar::turnLeft()      { std::cout << __FUNCTION__ << std::endl; }
 void HybridCar::turnRight()     { std::cout << __FUNCTION__ << std::endl; }
 void HybridCar::brake()         { std::cout << __FUNCTION__ << std::endl; }
